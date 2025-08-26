@@ -1,15 +1,17 @@
+// src/com/school/Student.java
 package com.school;
 
 public class Student {
+    private static int nextStudentIdCounter = 1; // auto ID generator
     private String name;
-    private int rollNumber;
+    private int studentId;
 
-    public Student(String name, int rollNumber) {
+    public Student(String name) {
         this.name = name;
-        this.rollNumber = rollNumber;
+        this.studentId = nextStudentIdCounter++;
     }
 
-    public void displayInfo() {
-        System.out.println("Student Name: " + name + ", Roll No: " + rollNumber);
+    public void displayDetails() {
+        System.out.println("Student ID: S" + studentId + ", Name: " + name);
     }
 }
