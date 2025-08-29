@@ -11,6 +11,7 @@ public class Student {
         this.studentId = nextStudentIdCounter++;
     }
 
+
     // Getter for studentId
     public int getStudentId() {
         return studentId;
