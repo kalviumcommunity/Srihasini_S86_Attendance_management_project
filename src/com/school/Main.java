@@ -10,10 +10,10 @@ public class Main {
 
         // Students
         Student[] students = {
-            new Student("Husky"),
-            new Student("Minnu"),
-            new Student("Supp"),
-            new Student("Bhanu")
+            new Student("Husky", "10th Grade"),
+            new Student("Minnu", "9th Grade"),
+            new Student("Supp", "11th Grade"),
+            new Student("Bhanu", "12th Grade")
         };
 
         // Courses
@@ -35,9 +35,9 @@ public class Main {
 
         // Attendance log
         List<AttendanceRecord> attendanceLog = new ArrayList<>();
-        attendanceLog.add(new AttendanceRecord(students[0].getStudentId(), courses[0].getCourseId(), "Present"));
-        attendanceLog.add(new AttendanceRecord(students[1].getStudentId(), courses[1].getCourseId(), "Absent"));
-        attendanceLog.add(new AttendanceRecord(students[2].getStudentId(), courses[2].getCourseId(), "Late")); // Invalid test
+        attendanceLog.add(new AttendanceRecord(students[0].getId(), courses[0].getCourseId(), "Present"));
+        attendanceLog.add(new AttendanceRecord(students[1].getId(), courses[1].getCourseId(), "Absent"));
+        attendanceLog.add(new AttendanceRecord(students[2].getId(), courses[2].getCourseId(), "Late")); // Invalid test
 
         System.out.println("\n--- Attendance Log ---");
         for (AttendanceRecord record : attendanceLog) {
